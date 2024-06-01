@@ -1,0 +1,509 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+  <meta name="generator" content="Hugo 0.108.0">
+  <title>Navbar Template · Bootstrap v5.3</title>
+  <link href="./css/bootstrap.min.css" rel="stylesheet">
+  <!-- 顶部导航栏样式css -->
+  <link rel="stylesheet" href="./css/nav-top.css">
+  <!-- 波浪css -->
+  <link rel="stylesheet" href="./css/wave.css">
+  <!-- 主要内容css -->
+  <link rel="stylesheet" href="./css/flip.css">
+  <link rel="stylesheet" href="./css/content.css">
+<link rel="stylesheet" href="./css/base.css">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/semantic-ui/2.2.4/semantic.min.css">
+</head>
+
+<body>
+  <!-- 这个div内部装着头图和波浪 -->
+  <div class="headimgandwave">
+    <img src="./images/headimg.jpg" alt="" class="headimg">
+    
+    <section class="wave">
+      <div class="clause">时宝直主</div>
+      <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+        viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+        <defs>
+          <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+        </defs>
+        <g class="parallax">
+          <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" />
+          <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
+          <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
+          <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
+        </g>
+      </svg>
+    </section>
+  </div>
+  <!-- 导航栏部分 -->
+  <nav class="navbar bg-light" aria-label="Light offcanvas navbar">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Cheng0359</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbarLight"
+        aria-controls="offcanvasNavbarLight">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbarLight"
+        aria-labelledby="offcanvasNavbarLightLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasNavbarLightLabel" style="font-size: 30px;">简明扼要</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#" style="font-size: 20px;">首页</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" style="font-size: 20px;">关于</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false" style="font-size: 20px;">
+                杂谈
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#" style="font-size: 20px;">第一动力</a></li>
+                <li><a class="dropdown-item" href="#" style="font-size: 20px;">另一个动力</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#" style="font-size: 20px;">某些其他的东西</a></li>
+              </ul>
+            </li>
+          </ul>
+          <form class="d-flex mt-3" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">搜</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <script src="./js/bootstrap.bundle.min.js"></script>
+
+  <section class="contentforpaper">
+    <div class="flipp">
+      <div class="flip">
+        <div class="front">
+          <!-- <img src="./images/flip1.jpg" alt=""> -->
+        </div>
+        <div class="back">
+          <h1>GPT-sovits</h1>
+          <p>
+           基于GPT和Sovits开发的可视化程度极高的语音克隆模型，但只支持中文</p>
+        </div>
+      </div>
+    </div>
+    <div class="flipp">
+      <div class="flip">
+        <div class="front">
+          <!-- <img src="./images/flip1.jpg" alt=""> -->
+        </div>
+        <div class="back">
+          <h1>Formalizer</h1>
+          <p>
+            伟大的工具</p>
+        </div>
+      </div>
+    </div>
+    <div class="flipp">
+      <div class="flip">
+        <div class="front">
+          <!-- <img src="./images/flip1.jpg" alt=""> -->
+        </div>
+        <div class="back">
+          <h1>trytako</h1>
+          <p>
+          又发现了一个卖金铲子的家伙！
+          各家都在做 AI 搜索
+          AI 搜索的痛点就是数据源不够好
+          这个叫Tako的服务，给 AI 搜索产品提供基于真实知识的互动图表。
+          比如对比 Netflix 和 Nvidia 的净利润曲线
+          这可比总结几个网页高级多了。。。
+          特别适合写研究报告，这种很难找的信息，用户付费意愿也很强
+          第一个合作伙伴会是 Perplexity，拭目以待！ </p>
+        </div>
+      </div>
+    </div>
+    <div class="flipp">
+      <div class="flip">
+        <div class="front" style="background: url(./images/jianli.jpg); background-size: 100% 100%;">
+        </div>
+        <div class="back">
+          <h1>ai在海选简历中
+          </h1>
+          <p>
+          如何让你的简历在AI 面前“所向披靡”？
+          
+          与 ChatGPT 斗，其乐无穷！</p>
+        </div>
+      </div>
+    </div>
+    <div class="flipp">
+      <div class="flip">
+        <div class="front" style="background: url(./images/googlepromote.png);background-size: 100% 100%;">
+          <!-- <img src="./images/flip1.jpg" alt=""> -->
+        </div>
+        <div class="back">
+          <h1>如何写出准确的promote</h1>
+          <p>
+          谷歌家的好东西，可以帮你学会如何写 AI 画图提示词。
+          
+          除了教你技巧外还会有对应的练习，给你一张图片让你用学习的技巧写提示词复刻图片。
+          
+          藏师傅第一等级全部 70 分以上通过，哈哈。
+          
+          来测试一下你的 AI 画图提示词能力吧，又要干苦力给谷歌打标了😭。
+          
+          这里尝试： <a href="https://artsandculture.google.com/experiment/say-what-you-see/jwG3m7wQShZngw ">https://artsandculture.google.com/experiment/say-what-you-see/jwG3m7wQShZngw</a></p>
+        </div>
+      </div>
+    </div><div class="flipp">
+      <div class="flip">
+        <div class="front" style="background: url(./images/renxingjiqiren.jpg); background-size: cover;">
+          <!-- <img src="./images/flip1.jpg" alt=""> -->
+        </div>
+        <div class="back">
+          <h1>人形机器人</h1>
+          <p>
+            中国电科首次系统展示「中电科人形机器人1号」，计划明年Q1落地应用 |<a href="#">CyberRobo</a></p>
+        </div>
+      </div>
+    </div>
+    <div class="flipp">
+      <div class="flip">
+        <div class="front" style="background: url(./images/openai.png);background-size: 100% 100%;">
+          <!-- <img src="./images/flip1.jpg" alt=""> -->
+        </div>
+        <div class="back">
+          <h1>openai员工blog</h1>
+          <p>
+          这些 AI 头部公司员工的博客真是宝藏，总能找到一些公开信息没有的东西。
+          
+          比如上次说数据即是模型的 Open AI 员工 jbetker，也参与的 GPT-4o 的训练，据他说这个项目去年年底才开始。
+          
+          是从一个构建AudioLM的项目延生出来的。几个月就能搞成这样确实离谱。
+          
+          博客在这里：https://nonint.com/2024/05/14/gpt-4o/</p>
+        </div>
+      </div>
+    </div>
+    <div class="flipp">
+      <div class="flip">
+        <div class="front">
+          <!-- <img src="./images/flip1.jpg" alt=""> -->
+        </div>
+        <div class="back">
+          <h1>Jianing Li</h1>
+          <p>
+            Hello, everyone! I am Jianing Li, an avid lover of synthetic biology
+            and long-distance running. I believe that Heavy is the head who
+            wears the crown. </p>
+        </div>
+      </div>
+    </div>
+    <div class="flipp">
+      <div class="flip">
+        <div class="front">
+          <!-- <img src="./images/flip1.jpg" alt=""> -->
+        </div>
+        <div class="back">
+          <h1>Jianing Li</h1>
+          <p>
+            Hello, everyone! I am Jianing Li, an avid lover of synthetic biology
+            and long-distance running. I believe that Heavy is the head who
+            wears the crown. </p>
+        </div>
+      </div>
+    </div>
+    <div class="flipp">
+      <div class="flip">
+        <div class="front">
+          <!-- <img src="./images/flip1.jpg" alt=""> -->
+        </div>
+        <div class="back">
+          <h1>Jianing Li</h1>
+          <p>
+            Hello, everyone! I am Jianing Li, an avid lover of synthetic biology
+            and long-distance running. I believe that Heavy is the head who
+            wears the crown. </p>
+        </div>
+      </div>
+    </div>
+    
+  </section>
+<script type="text/javascript">
+
+  function loadApp() {
+
+    var flipbook = $('.sj-book');
+
+    // Check if the CSS was already loaded
+
+    if (flipbook.width() == 0 || flipbook.height() == 0) {
+      setTimeout(loadApp, 10);
+      return;
+    }
+
+    // Mousewheel
+
+    $('#book-zoom').mousewheel(function (event, delta, deltaX, deltaY) {
+
+      var data = $(this).data(),
+        step = 30,
+        flipbook = $('.sj-book'),
+        actualPos = $('#slider').slider('value') * step;
+
+      if (typeof (data.scrollX) === 'undefined') {
+        data.scrollX = actualPos;
+        data.scrollPage = flipbook.turn('page');
+      }
+
+      data.scrollX = Math.min($("#slider").slider('option', 'max') * step,
+        Math.max(0, data.scrollX + deltaX));
+
+      var actualView = Math.round(data.scrollX / step),
+        page = Math.min(flipbook.turn('pages'), Math.max(1, actualView * 2 - 2));
+
+      if ($.inArray(data.scrollPage, flipbook.turn('view', page)) == -1) {
+        data.scrollPage = page;
+        flipbook.turn('page', page);
+      }
+
+      if (data.scrollTimer)
+        clearInterval(data.scrollTimer);
+
+      data.scrollTimer = setTimeout(function () {
+        data.scrollX = undefined;
+        data.scrollPage = undefined;
+        data.scrollTimer = undefined;
+      }, 1000);
+
+    });
+
+    // Slider
+
+    $("#slider").slider({
+      min: 1,
+      max: 100,
+
+      start: function (event, ui) {
+
+        if (!window._thumbPreview) {
+          _thumbPreview = $('<div />', { 'class': 'thumbnail' }).html('<div></div>');
+          setPreview(ui.value);
+          _thumbPreview.appendTo($(ui.handle));
+        } else
+          setPreview(ui.value);
+
+        moveBar(false);
+
+      },
+
+      slide: function (event, ui) {
+
+        setPreview(ui.value);
+
+      },
+
+      stop: function () {
+
+        if (window._thumbPreview)
+          _thumbPreview.removeClass('show');
+
+        $('.sj-book').turn('page', Math.max(1, $(this).slider('value') * 2 - 2));
+
+      }
+    });
+
+
+    // URIs
+
+    Hash.on('^page\/([0-9]*)$', {
+      yep: function (path, parts) {
+
+        var page = parts[1];
+
+        if (page !== undefined) {
+          if ($('.sj-book').turn('is'))
+            $('.sj-book').turn('page', page);
+        }
+
+      },
+      nop: function (path) {
+
+        if ($('.sj-book').turn('is'))
+          $('.sj-book').turn('page', 1);
+      }
+    });
+
+    // Arrows
+
+    $(document).keydown(function (e) {
+
+      var previous = 37, next = 39;
+
+      switch (e.keyCode) {
+        case previous:
+
+          $('.sj-book').turn('previous');
+
+          break;
+        case next:
+
+          $('.sj-book').turn('next');
+
+          break;
+      }
+
+    });
+
+
+    // Flipbook
+
+    flipbook.bind(($.isTouch) ? 'touchend' : 'click', zoomHandle);
+
+    flipbook.turn({
+      elevation: 50,
+      acceleration: !isChrome(),
+      autoCenter: true,
+      gradients: true,
+      duration: 1000,
+      pages: 32,
+      when: {
+        turning: function (e, page, view) {
+
+          var book = $(this),
+            currentPage = book.turn('page'),
+            pages = book.turn('pages');
+
+          if (currentPage > 3 && currentPage < pages - 3) {
+
+            if (page == 1) {
+              book.turn('page', 2).turn('stop').turn('page', page);
+              e.preventDefault();
+              return;
+            } else if (page == pages) {
+              book.turn('page', pages - 1).turn('stop').turn('page', page);
+              e.preventDefault();
+              return;
+            }
+          } else if (page > 3 && page < pages - 3) {
+            if (currentPage == 1) {
+              book.turn('page', 2).turn('stop').turn('page', page);
+              e.preventDefault();
+              return;
+            } else if (currentPage == pages) {
+              book.turn('page', pages - 1).turn('stop').turn('page', page);
+              e.preventDefault();
+              return;
+            }
+          }
+
+          updateDepth(book, page);
+
+          if (page >= 2)
+            $('.sj-book .p2').addClass('fixed');
+          else
+            $('.sj-book .p2').removeClass('fixed');
+
+          if (page < book.turn('pages'))
+            $('.sj-book .p31').addClass('fixed');
+          else
+            $('.sj-book .p31').removeClass('fixed');
+
+          Hash.go('page/' + page).update();
+
+        },
+
+        turned: function (e, page, view) {
+
+          var book = $(this);
+
+          if (page == 2 || page == 3) {
+            book.turn('peel', 'br');
+          }
+
+          updateDepth(book);
+
+          $('#slider').slider('value', getViewNumber(book, page));
+
+          book.turn('center');
+
+        },
+
+        start: function (e, pageObj) {
+
+          moveBar(true);
+
+        },
+
+        end: function (e, pageObj) {
+
+          var book = $(this);
+
+          updateDepth(book);
+
+          setTimeout(function () {
+
+            $('#slider').slider('value', getViewNumber(book));
+
+          }, 1);
+
+          moveBar(false);
+
+        },
+
+        missing: function (e, pages) {
+
+          for (var i = 0; i < pages.length; i++) {
+            addPage(pages[i], $(this));
+          }
+
+        }
+      }
+    });
+
+
+    $('#slider').slider('option', 'max', numberOfViews(flipbook));
+
+    flipbook.addClass('animated');
+
+    // Show canvas
+
+    $('#canvas').css({ visibility: '' });
+  }
+
+  // Hide canvas
+
+  $('#canvas').css({ visibility: 'hidden' });
+
+  // Load turn.js
+
+  yepnope({
+    test: Modernizr.csstransforms,
+    yep: ['lib/turn.min.js'],
+    nope: ['lib/turn.html4.min.js', 'css/jquery.ui.html4.css', 'css/steve-jobs-html4.css'],
+    both: ['js/steve-jobs.js', 'css/jquery.ui.css', 'css/steve-jobs.css'],
+    complete: loadApp
+  });
+
+</script>
+  <script src="./js/firework.js"></script>
+<!-- 一下四行为flip书特殊 -->
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.2/dist/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/semantic-ui/2.2.4/semantic.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery.scrollto@2.1.2/jquery.scrollTo.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/stevenjoezhang/live2d-widget@latest/autoload.js"></script>
+</body>
+
+</html>
